@@ -56,3 +56,7 @@ button {
 h3 {
     color: #edda2f;
 }
+
+div {
+    cursor:default;
+}
