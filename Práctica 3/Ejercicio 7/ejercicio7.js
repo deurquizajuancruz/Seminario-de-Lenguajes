@@ -84,9 +84,13 @@ function mostrarInfo(numero) {
     fetch("https://swapi.dev/api/people/?page=" + numeroPagina)
         .then(response => response.json())
         .then(data => {
+            let txtTitulo = document.createElement('span');
+            txtTitulo.className='titulos';
+            txtTitulo.innerHTML = 'información del personaje: ' + data.results[valuePersonaje].name.toLowerCase();
             let titulo = document.createElement('h2');
-            titulo.innerHTML = 'información del personaje: ' + data.results[valuePersonaje].name.toLowerCase();
+            titulo.id="tituloPersonaje";
             document.getElementById('infoPersonaje').appendChild(titulo);
+            document.getElementById("tituloPersonaje").appendChild(txtTitulo);
             document.getElementById('infoPersonaje').style.paddingLeft = '2%';
 
             let nacimiento = document.createElement('h3');
@@ -97,8 +101,7 @@ function mostrarInfo(numero) {
             let anio = document.createElement('p');
             if (data.results[valuePersonaje].birth_year.toLowerCase() == 'unknown') {
                 anio.innerHTML = 'Desconocido';
-            }
-            else anio.innerHTML = data.results[valuePersonaje].birth_year;
+            } else anio.innerHTML = data.results[valuePersonaje].birth_year;
             document.getElementById('infoPersonaje').appendChild(anio);
 
             let genero = document.createElement('h3');
@@ -108,11 +111,9 @@ function mostrarInfo(numero) {
             let gender = document.createElement('p');
             if (data.results[valuePersonaje].gender.toLowerCase() === 'male') {
                 gender.innerHTML = 'Masculino';
-            }
-            else if (data.results[valuePersonaje].gender.toLowerCase() === 'female') {
+            } else if (data.results[valuePersonaje].gender.toLowerCase() === 'female') {
                 gender.innerHTML = 'Femenino';
-            }
-            else gender.innerHTML = 'N/A';
+            } else gender.innerHTML = 'N/A';
 
             document.getElementById('infoPersonaje').appendChild(gender);
 

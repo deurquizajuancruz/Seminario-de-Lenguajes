@@ -1,11 +1,6 @@
 @font-face {
     font-family: starJedi;
     src: url(./Starjedi.ttf);
-
-}
-
-span {
-    cursor: pointer;
 }
 
 body {
@@ -16,14 +11,12 @@ body {
     margin-top: 0%;
 }
 
-span:hover,
-h1:hover,
-h2:hover {
-    color: #edda2f;
+.titulos {
+    cursor: default;
 }
 
-h2,
-h1 {
+h1,
+h2 {
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -31,6 +24,14 @@ h1 {
 
 h1 {
     margin: 0%;
+}
+
+span {
+    cursor: pointer;
+}
+
+span:hover {
+    color: #edda2f;
 }
 
 button {
@@ -42,7 +43,6 @@ button {
     -moz-border-radius: 28;
     border-radius: 28px;
     cursor: pointer;
-
 }
 
 .ant:hover {
