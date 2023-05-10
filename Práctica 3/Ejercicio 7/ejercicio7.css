@@ -45,12 +45,20 @@ button {
     cursor: pointer;
 }
 
-.ant:hover {
+#ant:hover {
     color: red;
 }
 
-.sig:hover {
+#sig:hover {
     color: rgb(0, 230, 0);
+}
+
+#pagina {
+    padding-left: 1%;
+}
+
+#pagina:hover {
+    cursor: default;
 }
 
 h3 {

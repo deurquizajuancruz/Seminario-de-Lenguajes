@@ -1,31 +1,34 @@
+let pagActual = 1;
+let datos = [];
+
 function borrar(id) {
     let listado = document.getElementById(id);
-    while (listado.firstChild) {
+    while (listado.firstChild) 
         listado.removeChild(listado.firstChild);
-    }
+}
+
+function contador() {
+    document.getElementById('pagina').innerHTML='Página: ' + pagActual + '/9';    
 }
 
 function incrementar() {
-    let numero = localStorage.getItem("pagina");
-    if (numero < 9) {
-        numero++;
-        localStorage.setItem("pagina", numero);
-        borrar('personajes');
-        personajes(numero);
+    if (pagActual < 9) {
+        pagActual++;
+        contador();
+        personajes(pagActual);
     }
 }
 
 function decrementar() {
-    let numero = localStorage.getItem('pagina');
-    if (numero > 1) {
-        numero--;
-        localStorage.setItem("pagina", numero);
-        borrar('personajes');
-        personajes(numero);
+    if (pagActual > 1) {
+        pagActual--;
+        contador();
+        personajes(pagActual);
     }
 }
 
 function personajes(numeroPagina) {
+    borrar('personajes');
     fetch("https://swapi.dev/api/people/?page=" + numeroPagina)
         .then(response => response.json())
         .then(data => {
@@ -39,13 +42,15 @@ function personajes(numeroPagina) {
                 pj.appendChild(texto);
                 document.getElementById('personajes').appendChild(pj);
             }
+            datos = data.results;
         });
 }
 let existe = false;
 function crearBorde() {
-    document.getElementById('infoPersonaje').style.borderWidth = 'medium';
-    document.getElementById('infoPersonaje').style.borderStyle = 'dotted';
-    document.getElementById('infoPersonaje').style.borderColor = 'rgb(97, 205, 255)';
+    const infoPersonaje = document.getElementById('infoPersonaje');
+    infoPersonaje.style.borderWidth = 'medium';
+    infoPersonaje.style.borderStyle = 'dotted';
+    infoPersonaje.style.borderColor = 'rgb(97, 205, 255)';
     existe = true;
 }
 
@@ -56,7 +61,6 @@ function solicitarPeli(url) {
             let peli = document.createElement('li');
             peli.innerHTML = data.title;
             document.getElementById('listaPelis').appendChild(peli);
-
         });
 }
 
@@ -65,11 +69,10 @@ function solicitarPlaneta(url) {
         .then(response => response.json())
         .then(data => {
             let planeta = document.createElement('p');
-            if (data.name.toLowerCase() == 'unknown') {
+            if (data.name.toLowerCase() == 'unknown') 
                 planeta.innerHTML = 'Desconocido';
-            }
-            else planeta.innerHTML = data.name;;
-
+            else 
+                planeta.innerHTML = data.name;
             document.getElementById('infoPersonaje').appendChild(planeta);
         });
 }
@@ -77,65 +80,62 @@ function solicitarPlaneta(url) {
 function mostrarInfo(numero) {
     borrar('infoPersonaje');
     const valuePersonaje = document.getElementById('personaje' + numero).value - 1;
-    let numeroPagina = localStorage.getItem('pagina');
-    if (!existe) {
+    const infoPersonaje = document.getElementById('infoPersonaje');
+
+    if (!existe) 
         crearBorde();
-    }
-    fetch("https://swapi.dev/api/people/?page=" + numeroPagina)
-        .then(response => response.json())
-        .then(data => {
-            let txtTitulo = document.createElement('span');
-            txtTitulo.className='titulos';
-            txtTitulo.innerHTML = 'información del personaje: ' + data.results[valuePersonaje].name.toLowerCase();
-            let titulo = document.createElement('h2');
-            titulo.id="tituloPersonaje";
-            document.getElementById('infoPersonaje').appendChild(titulo);
-            document.getElementById("tituloPersonaje").appendChild(txtTitulo);
-            document.getElementById('infoPersonaje').style.paddingLeft = '2%';
 
-            let nacimiento = document.createElement('h3');
-            nacimiento.innerHTML = 'Año de nacimiento:';
-            document.getElementById('infoPersonaje').appendChild(nacimiento);
+    let txtTitulo = document.createElement('span');
+    txtTitulo.className = 'titulos';
+    txtTitulo.innerHTML = 'información del personaje: ' + datos[valuePersonaje].name.toLowerCase();
+    let titulo = document.createElement('h2');
+    titulo.id = "tituloPersonaje";
+    infoPersonaje.appendChild(titulo);
+    document.getElementById("tituloPersonaje").appendChild(txtTitulo);
+    infoPersonaje.style.paddingLeft = '2%';
 
+    let nacimiento = document.createElement('h3');
+    nacimiento.innerHTML = 'Año de nacimiento:';
+    infoPersonaje.appendChild(nacimiento);
 
-            let anio = document.createElement('p');
-            if (data.results[valuePersonaje].birth_year.toLowerCase() == 'unknown') {
-                anio.innerHTML = 'Desconocido';
-            } else anio.innerHTML = data.results[valuePersonaje].birth_year;
-            document.getElementById('infoPersonaje').appendChild(anio);
+    let anio = document.createElement('p');
+    if (datos[valuePersonaje].birth_year.toLowerCase() == 'unknown') 
+        anio.innerHTML = 'Desconocido';
+    else 
+        anio.innerHTML = datos[valuePersonaje].birth_year;
+    infoPersonaje.appendChild(anio);
 
-            let genero = document.createElement('h3');
-            genero.innerHTML = 'Género:';
-            document.getElementById('infoPersonaje').appendChild(genero);
+    let genero = document.createElement('h3');
+    genero.innerHTML = 'Género:';
+    infoPersonaje.appendChild(genero);
 
-            let gender = document.createElement('p');
-            if (data.results[valuePersonaje].gender.toLowerCase() === 'male') {
-                gender.innerHTML = 'Masculino';
-            } else if (data.results[valuePersonaje].gender.toLowerCase() === 'female') {
-                gender.innerHTML = 'Femenino';
-            } else gender.innerHTML = 'N/A';
+    let gender = document.createElement('p');
+    if (datos[valuePersonaje].gender.toLowerCase() === 'male') 
+        gender.innerHTML = 'Masculino';
+    else if (datos[valuePersonaje].gender.toLowerCase() === 'female') 
+        gender.innerHTML = 'Femenino';
+    else 
+        gender.innerHTML = 'N/A';
+    infoPersonaje.appendChild(gender);
 
-            document.getElementById('infoPersonaje').appendChild(gender);
+    let peliculas = document.createElement('h3');
+    peliculas.innerHTML = 'Películas:';
+    let listado = document.createElement('ul');
+    listado.id = 'listaPelis';
+    listado.style.listStyle = 'none';
+    listado.style.padding = '0%';
+    infoPersonaje.appendChild(peliculas);
+    infoPersonaje.appendChild(listado);
 
-            let peliculas = document.createElement('h3');
-            peliculas.innerHTML = 'Películas:';
-            let listado = document.createElement('ul');
-            listado.id = 'listaPelis';
-            listado.style.listStyle = 'none';
-            listado.style.padding = '0%';
-            document.getElementById('infoPersonaje').appendChild(peliculas);
-            document.getElementById('infoPersonaje').appendChild(listado);
+    datos[valuePersonaje].films.forEach(element => {
+        solicitarPeli(element);
+    });
 
-            for (let i = 0; i < data.results[valuePersonaje].films.length; i++) {
-                solicitarPeli(data.results[valuePersonaje].films[i]);
-            }
-
-            let planeta = document.createElement('h3');
-            planeta.innerHTML = 'Planeta de nacimiento:';
-            document.getElementById('infoPersonaje').appendChild(planeta);
-            solicitarPlaneta(data.results[valuePersonaje].homeworld);
-        });
+    let planeta = document.createElement('h3');
+    planeta.innerHTML = 'Planeta de nacimiento:';
+    infoPersonaje.appendChild(planeta);
+    solicitarPlaneta(datos[valuePersonaje].homeworld);
 }
 
-localStorage.setItem('pagina', '1');
-personajes(1);
+personajes(pagActual);
+contador();
