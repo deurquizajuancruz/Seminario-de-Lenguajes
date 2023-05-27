@@ -1,0 +1,27 @@
+{
+  "name": "js-proyect",
+  "version": "1.0.0",
+  "description": "Seminario de Lenguaje JS - Informatica UNLP",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/nodemon --inspect=0.0.0.0 src/app.js",
+    "linux": "npm start",
+    "windows": ".\\node_modules\\.bin\\nodemon --inspect=0.0.0.0 src/app.js"
+  },
+  "keywords": [],
+  "author": "Milton Sosa",
+  "license": "ISC",
+  "dependencies": {
+    "directory-tree": "^3.2.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.21"
+  },
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
