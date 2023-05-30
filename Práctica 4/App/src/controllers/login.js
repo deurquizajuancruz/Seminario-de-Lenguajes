@@ -3,12 +3,10 @@
 const login = (req, res) => {
     const username = req.body.username;
     const password = req.body.password;
-    res.send('Username: ' + username + ' Password: ' + password);
+    console.log('Username: ' + username + ' Password: ' + password);
 }
 
 export default login;*/
-
-//const { response } = require("express");
 
 /* EJERCICIO 4
 
@@ -32,15 +30,13 @@ export default login;
 // EJERCICIO 5
 
 const login = (req, res) => {
-    fetch('http://localhost:3000/j/usuarios.json')
-        .then(r => r.json())
-        .then(data => {
-            if (data.username === req.body.username && data.password === req.body.password) {
-                res.send('Los datos coinciden. Username: ' + username + ' Password: ' + password);
-            } else {
-                res.redirect('/p/practica4/ejercicio2.html'); // Redireccionar al formulario en caso de datos no válidos
-            }
-        });
+    const data = JSON.parse(fs.readFileSync('src/data/usuarios.json', 'utf8'));
+
+    if (data[0].username === req.body.username && data[0].password === req.body.password) {
+        res.send('Los datos coinciden. Username: ' + username + ' Password: ' + password);
+    } else {
+        res.redirect('/p/practica4/ejercicio2.html'); // Redireccionar al formulario en caso de datos no válidos
+    }
 }
 
 export default login;
