@@ -20,7 +20,6 @@ app.use(express.urlencoded({ extended: false }));
 // configuracion de path a exponer publicamente 
 app.use('/s/', express.static(path.join(__dirname, 'public-static')));
 app.use('/p/', express.static(path.join(__dirname, '../practicas')));
-app.use('/j', express.static(path.join(__dirname, 'data')));
 
 // importo rutas desde modulo en archivo aparte
 app.use('/', routerServer);

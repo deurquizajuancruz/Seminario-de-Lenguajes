@@ -34,13 +34,21 @@ function promedioIMC(vector) {
 }
 
 function personaMasJoven(vector) {
-    vector = vector.map(x => calcularEdad(x.dob));
-    return Math.min(...vector);
+    let min = Infinity;
+    let joven;
+    vector.forEach(element => {
+        const edad = calcularEdad(element.dob);
+        if (edad < min) {
+            min = edad;
+            joven = element;
+        }
+    });
+    return joven;
 }
 
 function estatura(vector) {
-    return vector.map(x => x.height).sort((a, b) => {
-        return a - b;
+    return vector.sort((a, b) => {
+        return a.height - b.height;
     });
 }
 

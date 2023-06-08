@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Alice",
+        "dob": "2001-03-04T00:00:00.000Z",
+        "height": 165,
+        "weight": 68
+    },
+    {
+        "name": "Robert",
+        "dob": "1997-01-31T00:00:00.000Z",
+        "height": 170,
+        "weight": 88
+    },
+    {
+        "name": "Charles",
+        "dob": "1978-10-15T00:00:00.000Z",
+        "height": 188,
+        "weight": 102
+    },
+    {
+        "name": "Lucía",
+        "dob": "1955-08-07T00:00:00.000Z",
+        "height": 155,
+        "weight": 61
+    },
+    {
+        "name": "Peter",
+        "dob": "1988-03-09T00:00:00.000Z",
+        "height": 165,
+        "weight": 99
+    },
+    {
+        "name": "Lucas",
+        "dob": "1910-12-04T00:00:00.000Z",
+        "height": 172,
+        "weight": 75
+    }
+]
