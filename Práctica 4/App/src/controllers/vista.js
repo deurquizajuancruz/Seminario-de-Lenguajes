@@ -4,7 +4,9 @@ const vista_height = (req, res ) => {
     fetch('http://localhost:3000/peoples/by_height')
     .then(response => response.json())
     .then(data => { 
-        res.render('vistaH', {data:data});
+        res.render('vistaH', {
+            data:data
+        });
     })
 }
 

@@ -47,16 +47,11 @@ const averageIMC = (req, res) => {
 }
 
 const youngest = (req, res) => {
-    let min = Infinity;
-    let joven;
-    personas.forEach(element => {
-        const edad = calcularEdad(element.dob);
-        if (edad < min) {
-            min = edad;
-            joven = element;
-        }
-    });
-    res.json(joven);
+    res.json(
+        personas.sort((a,b) => {
+            return calcularEdad(a.dob) - calcularEdad(b.dob);
+        })[0]
+    );
 }
 
 const byHeight = (req, res) => {
