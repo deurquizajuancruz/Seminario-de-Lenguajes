@@ -1,0 +1,182 @@
+body {
+    font-family: 'Belanosima', sans-serif;
+    font-size: 23px;
+}
+
+.svg-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.svg-container img {
+    height: auto;
+    object-fit: contain;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+    font-size: 90% !important;
+}
+
+input {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+button {
+    font-size: inherit;
+    font-family: inherit;
+    background-color: white;
+    border-radius: 6px;
+    margin-left: 0.3rem;
+    transition: all 0.2s ease;
+}
+
+.button:active {
+    transform: scale(0.96);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button[disabled] {
+    cursor: not-allowed;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.02rem;
+}
+
+.container-nombres {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+}
+
+#insertarNombre {
+    width: 10rem;
+}
+
+button[disabled],
+input[disabled] {
+    cursor: not-allowed;
+}
+
+.container-perfiles {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.jugador {
+    flex-basis: 30%;
+    border: 1px solid #000;
+    box-shadow: 0 30px 30px -15px rgba(0, 0, 0, 0.3);
+    transition: border-color 1s ease;
+    margin: 1.6vh;
+}
+
+.titulosJugadores,
+.elegir {
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.titulosJugadores {
+    font-size: 2rem;
+}
+
+.elegir {
+    font-size: 1rem;
+}
+
+.card {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+    padding: 1.6vw;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1.5vw;
+}
+
+ul li {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+ul li:hover {
+    transform: scale(1.2);
+}
+
+.color-item {
+    border: 4.5px solid transparent;
+    transition: border-color 0.5s ease;
+}
+
+.color-item.active {
+    border-color: rgb(51, 152, 252);
+}
+
+#rojo {
+    background-color: rgb(238, 49, 49);
+}
+
+#verde {
+    background-color: rgb(27, 193, 52);
+}
+
+#rosa {
+    background-color: rgb(215, 52, 230);
+}
+
+#azul {
+    background-color: rgb(12, 8, 210);
+}
+
+#celeste {
+    background-color: rgb(53, 249, 229);
+}
+
+.container-boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5em;
+}
+
+.btn {
+    margin-right: 10px;
+    background-color: white;
+    cursor: pointer;
+    transition: border-color 1s ease;
+}
+
+#joinID {
+    width: 30vh;
+    margin: 5px;
+}
+
+.error {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: red;
+}

@@ -1,0 +1,166 @@
+body {
+    font-family: 'Belanosima', sans-serif;
+    font-size: 20px;
+}
+
+.svg-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.svg-container img {
+    height: auto;
+    object-fit: contain;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+    font-size: 90% !important;
+}
+
+button {
+    font-size: inherit;
+    font-family: inherit;
+    background-color: white;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+button[disabled]:hover {
+    cursor: not-allowed !important;
+}
+
+.button:active {
+    transform: scale(0.96);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.container-perfiles {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.jugador {
+    flex-basis: 30%;
+    border: 3px solid;
+    position: relative;
+}
+
+.vs {
+    font-size: 24px;
+    margin: 10px;
+}
+
+.titulosJugadores {
+    font-size: 1.5rem;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.container-numeros {
+    margin: 0.1rem;
+}
+
+.tirarDados {
+    margin-left: 0.3rem;
+}
+
+.juego {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.tabla {
+    margin: 1vh;
+    height: 80vh;
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    font-size: 40px;
+}
+
+.tablero {
+    width: 50vh;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background-color: white;
+    border: solid thin black;
+}
+
+.texto {
+    border: 1px solid black;
+    cursor: default;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+.entrada,
+.salida {
+    width: 50vh;
+    border: 1px solid black;
+    font-size: 2vw;
+    text-align: center;
+    cursor: default;
+    margin-top: 0%;
+}
+
+.entrada {
+    margin-bottom: 0%;
+}
+
+.jugador>img {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    margin: 10px;
+    width: 3vw;
+    height: 3vw;
+}
+
+.partidaActual,
+.turnoActual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.turnoActual {
+    flex-direction: column;
+}
+
+.opcion-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.opcion-container label {
+    margin-left: 5px;
+}
+
+#copiarId {
+    margin: 1.5rem;
+}
+
+.correcta {
+    color: green;
+}
+
+.incorrecta {
+    color: red;
+}

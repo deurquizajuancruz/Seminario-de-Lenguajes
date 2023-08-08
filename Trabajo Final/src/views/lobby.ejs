@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/s/css/stylesLobby.css">
+    <link rel="icon" href="https://www.info.unlp.edu.ar/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
+    <title> Lobby </title>
+</head>
+
+<body>
+    <!-- LOBBY: -->
+
+    <div class="svg-container">
+        <img src="/s/media/logo.svg" alt="Logo">
+        <div class="text-overlay">
+            <h1> Trabajo Final </h1>
+            <h2> Juan Cruz de Urquiza | Felipe de la Cuadra Bacci </h2>
+            <h3> Grupo 12 - Seminario de Lenguajes - JavaScript - UNLP - 2023 </h3>
+        </div>
+    </div>
+
+    <h1 class="titulo"> Ingrese nombre: </h1>
+    <div class="container-nombres">
+        <form action="/" method="POST">
+            <input type="text" id="insertarNombre" placeholder="Ingrese nombre" name="jugador" <% if (nombres!==undefined) { %> disabled <% } %>>
+            <button type="submit" id="nombreJugador" <% if (nombres!==undefined) { %> disabled <% } %>> Confirmar</button>
+        </form>
+    </div>
+
+    <div class="container-perfiles">
+        <% if (nombres!==undefined) { %>
+            <div class="jugador" id="jugador">
+                <p class="titulosJugadores" id="nombre"> <%= nombres %> </p>
+                <p class="elegir">Elegí un color: </p>
+                <div class="card">
+                    <ul id="listadoJugador">
+                        <li class="color-item" id="rojo" value="rgb(238, 49, 49)"></li>
+                        <li class="color-item" id="verde" value="rgb(27, 193, 52)"></li>
+                        <li class="color-item" id="rosa" value="rgb(215, 52, 230)"></li>
+                        <li class="color-item" id="azul" value="rgb(12, 8, 210)"></li>
+                        <li class="color-item" id="celeste" value="rgb(53, 249, 229)"></li>
+                    </ul>
+                </div>
+            </div>
+        <% } %>
+    </div>
+
+    <div class="container-boton">
+        <button id="botonCrear" style="display: none" class="btn"> Crear una partida </button> <!-- Crea una nueva partida donde se puede unir otro jugador -->
+        <button id="botonUnirse" style="display: none" class="btn"> Unirse a partida </button> <!-- Se ingresa el ID de una partida para unirse donde ya hay un jugador -->
+        <div id="campoInput" style="display: none">
+            <input type="text" placeholder="Ingresá el ID de la partida" id="joinID">
+            <button id="botonPegar" class="btn"> Pegar </button>
+            <button type="submit" id="botonConfirmar" class="btn"> Confirmar </button>
+        </div>
+    </div>
+    
+    <div class="error">
+        <p id="error"></p>
+    </div>
+
+    <script src="/s/scriptLobby.js"></script>
+</body>
+
+</html>

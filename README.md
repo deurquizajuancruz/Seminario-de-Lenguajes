@@ -2,4 +2,4 @@
 Seminario de Lenguajes - JavaScript  
 Licenciatura en Sistemas  
 Universidad Nacional de La Plata  
-2023
+Cursada 2023

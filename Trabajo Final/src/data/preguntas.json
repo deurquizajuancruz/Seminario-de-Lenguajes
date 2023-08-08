@@ -1,0 +1,352 @@
+[
+    {
+        "id": 1,
+        "pregunta": "¿Cuál es la suma de los ángulos de un triángulo?",
+        "correcta": "180º",
+        "incorrecta1": "360º",
+        "incorrecta2": "90º"
+    },
+    {
+        "id": 2,
+        "pregunta": "¿De qué colores es la jirafa?",
+        "correcta": "Amarillo y marrón",
+        "incorrecta1": "Amarillo y blanco",
+        "incorrecta2": "Blanco y negro"
+    },
+    {
+        "id": 3,
+        "pregunta": "¿Cuánto es 2+2x4?",
+        "correcta": 10,
+        "incorrecta1": 16,
+        "incorrecta2": 8
+    },
+    {
+        "id": 4,
+        "pregunta": "¿Cuál es la capital de Argentina?",
+        "correcta": "Ciudad Autónoma de Buenos Aires",
+        "incorrecta1": "La Plata",
+        "incorrecta2": "Mendoza"
+    },
+    {
+        "id": 5,
+        "pregunta": "¿Quién fue el primer presidente de Argentina?",
+        "correcta": "Bernardino Rivadavia",
+        "incorrecta1": "Domingo Faustino Sarmiento",
+        "incorrecta2": "Bartolomé Mitre"
+    },
+    {
+        "id": 6,
+        "pregunta": "¿Cuántos días tiene el mes de octubre?",
+        "correcta": 31,
+        "incorrecta1": 29,
+        "incorrecta2": 30
+    },
+    {
+        "id": 7,
+        "pregunta": "¿Cuál es el océano más grande del mundo?",
+        "correcta": "Océano Pacífico",
+        "incorrecta1": "Océano Atlántico",
+        "incorrecta2": "Océano Índico"
+    },
+    {
+        "id": 8,
+        "pregunta": "¿Cuál es el símbolo químico del oro?",
+        "correcta": "Au",
+        "incorrecta1": "Ag",
+        "incorrecta2": "Fe"
+    },
+    {
+        "id": 9,
+        "pregunta": "¿Cuál es el idioma más hablado del mundo?",
+        "correcta": "Chino mandarín",
+        "incorrecta1": "Inglés",
+        "incorrecta2": "Español"
+    },
+    {
+        "id": 10,
+        "pregunta": "¿En qué año comenzó la Segunda Guerra Mundial?",
+        "correcta": 1939,
+        "incorrecta1": 1945,
+        "incorrecta2": 1914
+    },
+    {
+        "id": 11,
+        "pregunta": "¿Cuál es el animal más grande del mundo?",
+        "correcta": "La ballena azul",
+        "incorrecta1": "El elefante africano",
+        "incorrecta2": "El tiburón blanco"
+    },
+    {
+        "id": 12,
+        "pregunta": "¿Cuál es el planeta más cercano al sol?",
+        "correcta": "Mercurio",
+        "incorrecta1": "Venus",
+        "incorrecta2": "Marte"
+    },
+    {
+        "id": 13,
+        "pregunta": "¿En qué continente se encuentra el desierto del Sahara?",
+        "correcta": "África",
+        "incorrecta1": "Asia",
+        "incorrecta2": "América"
+    },
+    {
+        "id": 14,
+        "pregunta": "¿Cuántos huesos tiene el cuerpo humano en promedio?",
+        "correcta": 206,
+        "incorrecta1": 300,
+        "incorrecta2": 150
+    },
+    {
+        "id": 15,
+        "pregunta": "¿Quién escribió la novela 'Cien años de soledad'?",
+        "correcta": "Gabriel García Márquez",
+        "incorrecta1": "Julio Cortázar",
+        "incorrecta2": "Pablo Neruda"
+    },
+    {
+        "id": 16,
+        "pregunta": "¿Cuál es la capital de España?",
+        "correcta": "Madrid",
+        "incorrecta1": "Barcelona",
+        "incorrecta2": "Valencia"
+    },
+    {
+        "id": 17,
+        "pregunta": "¿Cuál es el libro sagrado del Islam?",
+        "correcta": "El Corán",
+        "incorrecta1": "La Biblia",
+        "incorrecta2": "La Torá"
+    },
+    {
+        "id": 18,
+        "pregunta": "¿Cuál es el río más largo del mundo?",
+        "correcta": "El río Amazonas",
+        "incorrecta1": "El río Nilo",
+        "incorrecta2": "El río Mississippi"
+    },
+    {
+        "id": 19,
+        "pregunta": "¿Cuál es la montaña más alta del mundo?",
+        "correcta": "El Monte Everest",
+        "incorrecta1": "El Monte Kilimanjaro",
+        "incorrecta2": "El Monte Aconcagua"
+    },
+    {
+        "id": 20,
+        "pregunta": "¿Cuál es la moneda oficial de Japón?",
+        "correcta": "El yen",
+        "incorrecta1": "El dólar",
+        "incorrecta2": "El euro"
+    },
+    {
+        "id": 21,
+        "pregunta": "¿Qué país es el primer productor Mundial de Café?",
+        "correcta": "Brasil",
+        "incorrecta1": "Colombia",
+        "incorrecta2": "Venezuela"
+    },
+    {
+        "id": 22,
+        "pregunta": "¿Cuántos compartimientos tiene el estómago de la vaca?",
+        "correcta": 4,
+        "incorrecta1": 2,
+        "incorrecta2": 1
+    },
+    {
+        "id": 23,
+        "pregunta": "¿Cuál es el animal que lleva veneno en la cola?",
+        "correcta": "El escorpión",
+        "incorrecta1": "La avispa",
+        "incorrecta2": "La cobra"
+    },
+    {
+        "id": 24,
+        "pregunta": "¿Qué país tiene un templo budista en su bandera?",
+        "correcta": "Camboya",
+        "incorrecta1": "Tailandia",
+        "incorrecta2": "Vietnam"
+    },
+    {
+        "id": 25,
+        "pregunta": "¿De qué nacionalidad es el golfista Tiger Woods?",
+        "correcta": "Estadounidense",
+        "incorrecta1": "Francesa",
+        "incorrecta2": "Británica"
+    },
+    {
+        "id": 26,
+        "pregunta": "¿En qué país se encuentran más de la mitad de los lagos del mundo?",
+        "correcta": "Canadá",
+        "incorrecta1": "Rusia",
+        "incorrecta2": "Estados Unidos"
+    },
+    {
+        "id": 27,
+        "pregunta": "¿De qué origen era Confucio?",
+        "correcta": "Chino",
+        "incorrecta1": "Coreano",
+        "incorrecta2": "Japonés"
+    },
+    {
+        "id": 28,
+        "pregunta": "¿Qué selección de fútbol ganó la Eurocopa 2008?",
+        "correcta": "España",
+        "incorrecta1": "Alemania",
+        "incorrecta2": "Francia"
+    },
+    {
+        "id": 29,
+        "pregunta": "¿Qué idioma se habla en Eslovaquia?",
+        "correcta": "Eslovaco",
+        "incorrecta1": "Checo",
+        "incorrecta2": "Alemán"
+    },
+    {
+        "id": 30,
+        "pregunta": "¿Qué animal le comió una mano al Capitán Garfio en Peter Pan?",
+        "correcta": "Un cocodrilo",
+        "incorrecta1": "Un perro",
+        "incorrecta2": "Un tiburón"
+    },
+    {
+        "id": 31,
+        "pregunta": "¿Cuántas caras tiene un cubo?",
+        "correcta": 6,
+        "incorrecta1": 4,
+        "incorrecta2": 8
+    },
+    {
+        "id": 32,
+        "pregunta": "¿En qué ciudad se juega el torneo de tenis Roland Garros?",
+        "correcta": "París",
+        "incorrecta1": "Toronto",
+        "incorrecta2": "Berna"
+    },
+    {
+        "id": 33,
+        "pregunta": "¿Quién hizo el gol del triunfo argentino en la final de fútbol de Pekín 2008?",
+        "correcta": "Di María",
+        "incorrecta1": "Agüero",
+        "incorrecta2": "Messi"
+    },
+    {
+        "id": 34,
+        "pregunta": "¿Cuál es la competencia ciclística más importante del mundo?",
+        "correcta": "Tour de France",
+        "incorrecta1": "Vuelta de España",
+        "incorrecta2": "Giro d'Italia"
+    },
+    {
+        "id": 35,
+        "pregunta": "¿Con qué nombre era conocido el cantante Farrokh Bulsara?",
+        "correcta": "Freddie Mercury",
+        "incorrecta1": "Drake",
+        "incorrecta2": "Usher"
+    },
+    {
+        "id": 36,
+        "pregunta": "¿De qué color es el Taj Mahal?",
+        "correcta": "Blanco",
+        "incorrecta1": "Negro",
+        "incorrecta2": "Rosa"
+    },
+    {
+        "id": 37,
+        "pregunta": "¿Qué tenía Medusa como cabello?",
+        "correcta": "Serpientes",
+        "incorrecta1": "Plantas venenosas",
+        "incorrecta2": "Gusanos"
+    },
+    {
+        "id": 38,
+        "pregunta": "¿Qué bandera de país sudamericano tiene 7 estrellas en el semicírculo?",
+        "correcta": "Venezuela",
+        "incorrecta1": "Brasil",
+        "incorrecta2": "Ecuador"
+    },
+    {
+        "id": 39,
+        "pregunta": "¿Quién es el dueño del caballo Rocinante?",
+        "correcta": "Don Quijote",
+        "incorrecta1": "El Cid Campeador",
+        "incorrecta2": "Amadis de Gaula"
+    },
+    {
+        "id": 40,
+        "pregunta": "¿Cuál es el símbolo zodiacal de Capricornio?",
+        "correcta": "Una cabra",
+        "incorrecta1": "Un carnero",
+        "incorrecta2": "Un toro"
+    },
+    {
+        "id": 41,
+        "pregunta": "¿Cuántos libros forman la colección de Harry Potter?",
+        "correcta": 7,
+        "incorrecta1": 5,
+        "incorrecta2": 8
+    },
+    {
+        "id": 42,
+        "pregunta": "¿Cuáles son los 4 principios de accesibilidad web establecidas por el World Wide Web Consortium?",
+        "correcta": "Perceptibilidad, operabilidad, comprensibilidad y robustez",
+        "incorrecta1": "Accesibilidad, inclusión, distinción y vulnerabilidad",
+        "incorrecta2": "Comprensión, diversidad, aceptación y razonamiento"
+    },
+    {
+        "id": 43,
+        "pregunta": "¿Cuáles de estas es una alternativa textual para contenidos no textuales?",
+        "correcta": "Voz",
+        "incorrecta1": "Reescritura",
+        "incorrecta2": "CAPTCHA"
+    },
+    {
+        "id": 44,
+        "pregunta": "¿Cuáles de estas es una alternativa sincronizada para contenidos multimedios?",
+        "correcta": "Subtítulos en directo",
+        "incorrecta1": "Ilustraciones",
+        "incorrecta2": "Descripción textual"
+    },
+    {
+        "id": 45,
+        "pregunta": "¿Qué significa la adaptabilidad en la accesibilidad web?",
+        "correcta": "Crear contenidos que puedan presentarse de diversas maneras",
+        "incorrecta1": "Crear contenido y que cada usuario se adapte a éste",
+        "incorrecta2": "Adaptar el contenido a las diversas resoluciones de pantalla"
+    },
+    {
+        "id": 46,
+        "pregunta": "¿Hasta cuánto se debe poder variar el tamaño de un texto?",
+        "correcta": "200%",
+        "incorrecta1": "15%",
+        "incorrecta2": "100%"
+    },
+    {
+        "id": 47,
+        "pregunta": "¿Qué significa el principio de operabilidad?",
+        "correcta": "Los componentes de la interfaz de usuario y la navegación deben ser operables",
+        "incorrecta1": "Las operaciones deben ser realizadas por el navegador",
+        "incorrecta2": "La operación del usuario debe ser individual"
+    },
+    {
+        "id": 48,
+        "pregunta": "¿Qué significa que una página web sea navegable?",
+        "correcta": "Se deben proporcionar medios que sirvan de ayuda a los usuarios a la hora de navegar, localizar contenido y determinar dónde se encuentran",
+        "incorrecta1": "El usuario debe poder navegar por donde quiera",
+        "incorrecta2": "La navegación debe ser brindada por el sistema y no por el usuario" 
+    },
+    {
+        "id": 49,
+        "pregunta": "¿Cuál es el máximo nivel de conformidad de una página web?",
+        "correcta": "AAA",
+        "incorrecta1": "A",
+        "incorrecta2": 1
+    },
+    {
+        "id": 50,
+        "pregunta": "¿De qué antiguo país se separó Eslovenia?",
+        "correcta": "Yugoslavia",
+        "incorrecta1": "Unión Soviética ",
+        "incorrecta2": "Checoslovaquia"
+    }
+]
